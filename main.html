@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Adoption</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    li {
+      transition: transform 0.3s;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    iframe {
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Dog Adoption</h1>
+  <p>Click on your favorite dog breed to learn more!</p>
 
+  <ul>
+    <li>
+      <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">
+        <img src="https://coatsandcolors.com/wp-content/uploads/2024/05/Golden-Retriever-coat-type-2.jpg" alt="Golden Retriever">
+      </a>
+      <br>
+      <!-- Embedded YouTube Video for Golden Retriever -->
+      <iframe width="250" height="150"
+        src="https://www.youtube.com/embed/6cFh_5n0G7Y"
+        title="Golden Retriever Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </li>
+
+    <li>
+      <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Toy_Poodle_3.jpg" alt="Poodle">
+      </a>
+    </li>
+  </ul>
 </body>
-
 </html>
